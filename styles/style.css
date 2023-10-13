@@ -1,0 +1,12 @@
+#logoPrincipal{
+    width: 80%;
+    height: auto;
+}
+
+[class^="col"]{
+    padding: 0.5rem 1rem;
+}
+
+form > [class^="col"]{
+    padding: 0 1rem;
+}
