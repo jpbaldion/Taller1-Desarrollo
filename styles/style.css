@@ -1,5 +1,5 @@
 #logoPrincipal{
-    width: 80%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -9,4 +9,74 @@
 
 form > [class^="col"]{
     padding: 0 1rem;
+}
+
+.card-body p{
+    text-align: justify;
+}
+
+.card{
+    width : 21rem;
+}
+
+.dinoList{
+    list-style-type: none;
+}
+
+.dinoList li{
+    position: relative;
+    padding-left: 23px;
+    font-size: 1.2rem;
+}
+
+.carnivoro::before{
+    content: "";
+    display: inline;
+    width: 20px;
+    height: 20px;
+    background: url('../imagenes/bife.png') center center no-repeat;
+    position: absolute;
+    background-size: contain;
+    left: 0;
+    top: 0;
+}
+
+.herbivoro::before{
+    content: "";
+    display: inline;
+    width: 20px;
+    height: 20px;
+    background: url('../imagenes/hoja.png') center center no-repeat;
+    position: absolute;
+    background-size: contain;
+    left: 0;
+    top: 0;
+}
+
+.omnivoro::before{
+    content: "";
+    display: inline;
+    width: 20px;
+    height: 20px;
+    background: url('../imagenes/nutricion.png') center center no-repeat;
+    position: absolute;
+    background-size: contain;
+    left: 0;
+    top: 0;
+}
+
+h3{
+    text-align: center;
+}
+
+@media (max-width: 1104px) {
+    .card{
+        width : 18rem;
+    }
+}
+
+@media (max-width: 638px) {
+    .card{
+        width : 30rem;
+    }
 }
